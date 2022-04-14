@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"fmt"
 )
 
 type Album struct {
@@ -9,6 +10,10 @@ type Album struct {
 	Title  *string  `json:"title"`
 	Artist *string  `json:"artist"`
 	Price  *float64 `json:"price"`
+}
+
+func (a Album) String() string {
+	return fmt.Sprintf("{%v %v %v %v}", *a.ID, *a.Title, *a.Artist, *a.Price)
 }
 
 type AlbumService struct {
