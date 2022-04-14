@@ -37,18 +37,18 @@ func (s *AlbumService) ListAlbums(ctx context.Context, filter *Album, result *[]
 	return nil
 }
 
-func newUint(v uint) *uint {
+func NewUint(v uint) *uint {
 	return &v
 }
-func newString(v string) *string {
+func NewString(v string) *string {
 	return &v
 }
-func newFloat64(v float64) *float64 {
+func NewFloat64(v float64) *float64 {
 	return &v
 }
 
 var albums = []Album{
-	{ID: newUint(1), Title: newString("Blue Train"), Artist: newString("John Coltrane"), Price: newFloat64(56.99)},
-	{ID: newUint(2), Title: newString("Jeru"), Artist: newString("Gerry Mulligan"), Price: newFloat64(17.99)},
-	{ID: newUint(3), Title: newString("Sarah Vaughan and Clifford Brown"), Artist: newString("Sarah Vaughan"), Price: newFloat64(39.99)},
+	{ID: NewUint(1), Title: NewString("Blue Train"), Artist: NewString("John Coltrane"), Price: NewFloat64(56.99)},
+	{ID: NewUint(2), Title: NewString("Jeru"), Artist: NewString("Gerry Mulligan"), Price: NewFloat64(17.99)},
+	{ID: NewUint(3), Title: NewString("Sarah Vaughan and Clifford Brown"), Artist: NewString("Sarah Vaughan"), Price: NewFloat64(39.99)},
 }
