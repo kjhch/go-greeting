@@ -1,6 +1,8 @@
-package gogreeting
+package foo
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestHello(t *testing.T) {
 	name := "kj"
